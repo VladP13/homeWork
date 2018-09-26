@@ -15,4 +15,5 @@ public class Task10 {
         ArrayUtills.printArray(mas);
         ArrayUtills.printArray(mas1);
     }
+
 }
