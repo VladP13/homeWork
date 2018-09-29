@@ -96,4 +96,9 @@ public class ArrayUtills {
         }
         return res;
     }
+
+    public static int genNum(int range){
+        return (int) (Math.random() * range);
+
+    }
 }

@@ -17,6 +17,7 @@ public class Task26 {
         int counter = 0;
         int division = 0;
 
+
         for (int i = 0; i < numb; i++) {
             if (numb % 10 == 8) {
                 counter++;
