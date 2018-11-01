@@ -97,8 +97,32 @@ public class ArrayUtills {
         return res;
     }
 
-    public static int genNum(int range){
+    public static int genNum(int range) {
         return (int) (Math.random() * range);
 
+    }
+
+    public static int[] ArrayRight(int[] mas, int numb) {
+        for (int i = 0; i < numb; i++) {
+            int element = mas[mas.length - 1];//сохряняєм останній елемент
+            for (int j = mas.length - 1; j > 0; j--) {
+                mas[j] = mas[j - 1]; // 1,2,3,4,5 ->  в астанній елемент записуєм попередній і рухаємося далі в ліво;
+            }
+
+            mas[0] = element;
+        }
+        return mas;
+    }
+
+    public static int[] ArrayLeft(int[] mas, int numb) {
+
+        for (int i = 0; i < numb; i++) {
+            int element = mas[0];
+            for (int j = 0; j < mas.length - 1; j++) {
+                mas[j] = mas[j + 1];
+            }
+            mas[mas.length - 1] = element;
+        }
+        return mas;
     }
 }
